@@ -1,0 +1,19 @@
+.quote{
+  background-color: #ffffffe0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+
+
+  .container{
+    font-style: italic;
+    margin-top: 28px;
+    margin-left: 50px;
+    width: 750px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    color: #00ffee;
+    font-weight:400;
+  }
+}

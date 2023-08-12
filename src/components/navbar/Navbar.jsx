@@ -36,9 +36,7 @@ const Navbar = () => {
                     <span className='dot'>.</span>
                 </div>
                 <div className="links">
-                    <span>Learn</span>
                     <span> Explore</span>
-                    <span> English</span>
                     <span> Sign In</span>
                     {!currentUser?.isSeller && <span> Become A Seller</span>}
                     {!currentUser && <button> Join</button>}
