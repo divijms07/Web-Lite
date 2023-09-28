@@ -72,6 +72,7 @@ const Navbar = () => {
                 <span>TEST</span>
                 <span>TEST2</span>
             </div>
+            <hr />
             </>
         )}
 
