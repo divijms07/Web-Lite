@@ -4,11 +4,11 @@ import "./MyGigs.scss"
 
 const MyGigs = () => {
 
-  const currentUser = {
-    id: 1,
-    username: "Anna",
-    isSeller: true,
-  };
+  const currentUser={
+    id:1,
+    username:"John David",
+    isSeller:"true"
+}
 
   return (
     <div className="myGigs">
