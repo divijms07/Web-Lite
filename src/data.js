@@ -135,7 +135,7 @@ export const gigs = [
     price: 112,
     star: 5,
     username: "Carol Steve",
-  },
+  }, 
   {
     id: 4,
     img: "https://images.pexels.com/photos/5708069/pexels-photo-5708069.jpeg?auto=compress&cs=tinysrgb&w=1600",

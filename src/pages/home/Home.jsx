@@ -84,7 +84,7 @@ const Home = () => {
             </div>
             <button>Explore eduLance Learn</button>
             <div className="item">
-              <img
+              <img 
                 src=""
                 alt=""
                 />
