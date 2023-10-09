@@ -1,7 +1,17 @@
 import express from "express";
-import { deleteUser } from "../controller/user.controller.js";
-const router=express.Router()
+import {
+  createGig,
+  deleteGig,
+  getGig,
+  getGigs
+} from "../controller/gig.controller.js";
+import { verifytoken } from "../middleware/jwt.js";
 
-router.get("/test",deleteUser)
+const router = express.Router();
+
+router.post("/", verifytoken, createGig);
+router.delete("/:id", verifytoken, deleteGig);
+router.get("/single/:id", getGig);
+router.get("/", getGigs);
 
 export default router;
