@@ -1,4 +1,4 @@
 # Web-Lite
 Freelancing Website Web Mini Project
 
-"git clone" Repository
+MERN STACK + MULTIPLE API'S

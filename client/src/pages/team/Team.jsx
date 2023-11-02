@@ -1,6 +1,6 @@
 import React from "react";
 import Team from "../../components/Team/TeamC";
-import "./teampage.scss";
+import "./Team.scss";
 const Team1 =() =>{
     return (
         <div className="team">

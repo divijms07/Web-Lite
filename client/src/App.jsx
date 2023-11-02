@@ -13,24 +13,30 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import About from './pages/about/About';
 import Team from './pages/team/Team';
+import {
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 import './App.scss';
-  
+import Pay from "./pages/pay/Pay";
+import Success from "./pages/success/Success";
 
 
 function App() {
+  const queryClient = new QueryClient();
 
-  const Layout = () => {
+    const Layout = () => {
     return (
       <div className="app">
-
-      <Navbar />
-      <Outlet />
-      <Footer />
-      
+        <QueryClientProvider client={queryClient}>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </QueryClientProvider>
       </div>
-    )
-  }
+    );
+  };
 
   const router = createBrowserRouter([
     {
@@ -84,6 +90,14 @@ function App() {
         {
           path: "/team",
           element: <Team />,
+        },
+        {
+          path: "/pay/:id",
+          element: <Pay />,
+        },
+        {
+          path: "/success",
+          element: <Success />,
         },
       ],
     },

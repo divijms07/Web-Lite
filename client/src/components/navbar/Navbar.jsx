@@ -44,13 +44,18 @@ const Navbar = () => {
               <span className="dot">.</span>
             </div>
             <div className="links">
-            <Link className="link" to="/gigs">
+            <Link className="link" to="/gigs?cat=design">
               <span>Explore Gigs</span>
+            </Link>
+            <Link className="link" to="/team">
+              <span>Team</span>
             </Link>
             <Link className="link" to="/contact">
               <span>Contact</span>
             </Link>
+            <Link className="link" to="/register">
               {!currentUser?.isSeller && <span>Become a Seller</span>}
+              </Link>
               {currentUser ? (
                 <div className="user" onClick={() => setOpen(!open)}>
                   <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
@@ -93,32 +98,17 @@ const Navbar = () => {
             <>
               <hr />
               <div className="menu">
-                <Link className="link menuLink" to="/">
+                <Link className="link menuLink" to="/gigs?cat=design">
                   Graphics & Design
                 </Link>
-                <Link className="link menuLink" to="/">
+                <Link className="link menuLink" to="/gigs?cat=animation">
                   Video & Animation
                 </Link>
-                <Link className="link menuLink" to="/">
-                  Writing & Translation
+                <Link className="link menuLink" to="/gigs?cat=web">
+                  Web Development
                 </Link>
-                <Link className="link menuLink" to="/">
+                <Link className="link menuLink" to="/gigs?cat=ai">
                   AI Services
-                </Link>
-                <Link className="link menuLink" to="/">
-                  Digital Marketing
-                </Link>
-                <Link className="link menuLink" to="/">
-                  Music & Audio
-                </Link>
-                <Link className="link menuLink" to="/">
-                  Programming & Tech
-                </Link>
-                <Link className="link menuLink" to="/">
-                  Business
-                </Link>
-                <Link className="link menuLink" to="/">
-                  Lifestyle
                 </Link>
               </div>
               <hr />
